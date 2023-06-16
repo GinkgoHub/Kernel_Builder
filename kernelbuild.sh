@@ -19,6 +19,6 @@ if [ -f "out/arch/arm64/boot/Image.gz-dtb" ] && [ -f "out/arch/arm64/boot/dtbo.i
 	cp out/arch/arm64/boot/Image.gz-dtb AnyKernel3
 	cp out/arch/arm64/boot/dtbo.img AnyKernel3
 	cd AnyKernel3
-	zip -r ginkgo-lineage-18.1-perf * -x '*.git*' README.md *placeholder
-        curl -T ginkgo-lineage-18.1-perf.zip temp.sh && echo ""
+	zip -r ginkgo-perf * -x '*.git*' README.md *placeholder
+        curl -T ginkgo-perf.zip temp.sh && echo ""
 fi
